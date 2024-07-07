@@ -11,7 +11,7 @@
    .HOME{
     display: flex;
     }
-    .ÜBER UNS{
+    .ÜBERUNS{
       display: none;
     }
     .KONTAKT{
@@ -97,9 +97,9 @@
        <img src="/bilder/bild1.jpg" width="60">
       <div class="buttoncontainer">
      
-       <button class="navibutton" onclick="showHome()">ÜBER UNS</button>
+       <button class="navibutton" onclick="showHome()">ÜBERUNS</button>
      <button class="navibutton" onclick="showKontakt()">KONTAKT</button>
-     <button class="navibutton" onclick="showÜBER UNS()">HOME</button>
+     <button class="navibutton" onclick="showÜBERUNS()">HOME</button>
       </div>
       </div>
 
@@ -147,24 +147,24 @@ function showHome(){
   HomeSection.style.display = "flex";
   var KontaktSection = document.querySelector(".KONTAKT");
   KONTAKTSection.style.display = "none";
-  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
-  ÜBER UNSSection.style.display = "none";
+  var ÜBERUNSSection = document.querySelector(".ÜBER UNS");
+  ÜBERUNSSection.style.display = "none";
 }
 function showKontakt(){
   var HomeSection = document.querySelector(".HOME");
   HomeSection.style.display = "none";
   var KontaktSection = document.querySelector(".KONTAKT");
   KONTAKTSection.style.display = "flex";
-  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
-  ÜBER UNSSection.style.display = "none";
+  var ÜBERUNSSection = document.querySelector(".ÜBER UNS");
+  ÜBERUNSSection.style.display = "none";
 }
-function showÜBER UNS(){
+function showÜBERUNS(){
   var HomeSection = document.querySelector(".HOME");
   HomeSection.style.display = "none";
   var KontaktSection = document.querySelector(".KONTAKT");
   KONTAKTSection.style.display = "none";
-  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
-  ÜBER UNSSection.style.display = "flex";
+  var ÜBERUNSSection = document.querySelector(".ÜBER UNS");
+  ÜBERUNSSection.style.display = "flex";
 }
 
 
