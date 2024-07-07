@@ -143,14 +143,29 @@ Hallo hier kannst du uns erreichen
 </div>
 <script>
 function showHome(){
+  var HomeSection = document.querySelector(".HOME");
+  HomeSection.style.display = "flex";
+  var KontaktSection = document.querySelector(".KONTAKT");
+  KONTAKTSection.style.display = "none";
+  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
+  ÜBER UNSSection.style.display = "none";
 }
 function showKontakt(){
   var HomeSection = document.querySelector(".HOME");
   HomeSection.style.display = "none";
   var KontaktSection = document.querySelector(".KONTAKT");
   KONTAKTSection.style.display = "flex";
+  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
+  ÜBER UNSSection.style.display = "none";
 }
-
+function showÜBER UNS(){
+  var HomeSection = document.querySelector(".HOME");
+  HomeSection.style.display = "none";
+  var KontaktSection = document.querySelector(".KONTAKT");
+  KONTAKTSection.style.display = "none";
+  var ÜBER UNSSection = document.querySelector(".ÜBER UNS");
+  ÜBER UNSSection.style.display = "flex";
+}
 
 
 
