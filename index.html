@@ -11,7 +11,7 @@
    .HOME{
     display: flex;
     }
-    .ÜBERUNS{
+    .UEBERUNS{
     display: none;
     }
     .KONTAKT{
@@ -99,7 +99,7 @@
      
        <button class="navibutton" onclick="showHome()">HOME</button>
      <button class="navibutton" onclick="showKontakt()">KONTAKT</button>
-     <button class="navibutton" onclick="showÜBERUNS()">ÜBER UNS</button>
+     <button class="navibutton" onclick="showUeberuns()">ÜBER UNS</button>
       </div>
       </div>
 
@@ -116,7 +116,7 @@
     
   </section>
   
-  <section class="ÜBERUNS">
+  <section class="UEBERUNS">
     <div>
 
 
@@ -147,28 +147,28 @@
 
 <script>
 function showHome(){
-  var HomeSection = document.querySelector(".HOME");
+  var HomeSection = document.querySelector(".Home");
   HomeSection.style.display = "flex";
-  var KontaktSection = document.querySelector(".KONTAKT");
-  KONTAKTSection.style.display = "none";
-  var ÜBERUNSSection = document.querySelector(".ÜBERUNS");
-  ÜBERUNSSection.style.display = "none";
+  var KontaktSection = document.querySelector(".Kontakt");
+  KontaktSection.style.display = "none";
+  var UeberunsSection = document.querySelector(".Ueberuns");
+  UeberunsSection.style.display = "none";
 }
 function showKontakt(){
-  var HomeSection = document.querySelector(".HOME");
+  var HomeSection = document.querySelector(".Home");
   HomeSection.style.display = "none";
-  var KontaktSection = document.querySelector(".KONTAKT");
-  KONTAKTSection.style.display = "flex";
-  var ÜBERUNSSection = document.querySelector(".ÜBERUNS");
-  ÜBERUNSSection.style.display = "none";
+  var KontaktSection = document.querySelector(".Kontakt");
+  KontaktSection.style.display = "flex";
+  var UeberunsSection = document.querySelector(".Ueberuns");
+  UeberunsSection.style.display = "none";
 }
 function showÜBERUNS(){
-  var HomeSection = document.querySelector(".HOME");
+  var HomeSection = document.querySelector(".Home");
   HomeSection.style.display = "none";
-  var KontaktSection = document.querySelector(".KONTAKT");
-  KONTAKTSection.style.display = "none";
-  var ÜBERUNSSection = document.querySelector(".ÜBERUNS");
-  ÜBERUNSSection.style.display = "flex";
+  var KontaktSection = document.querySelector(".Kontakt");
+  KontaktSection.style.display = "none";
+  var UeberunsSection = document.querySelector(".Ueberuns");
+  UeberunsSection.style.display = "flex";
 }
 
 
