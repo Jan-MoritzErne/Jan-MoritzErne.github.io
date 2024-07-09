@@ -5,6 +5,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Der FLYING RUBBISH</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benutzereingabe Formular</title>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
    
    
@@ -105,7 +110,21 @@
 
   <body>
 
+    <div class="container">
+      <h1>Benutzereingabe Formular</h1>
+      <form id="userForm">
+          <label for="userName">Name:</label>
+          <input type="text" id="userName" name="userName" required>
 
+          <label for="userEmail">E-Mail:</label>
+          <input type="email" id="userEmail" name="userEmail" required>
+
+          <label for="userMessage">Nachricht:</label>
+          <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+
+          <button type="submit">Absenden</button>
+      </form>
+  </div>
 
 
     <div class="navi">
