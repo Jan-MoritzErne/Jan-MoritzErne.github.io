@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benutzereingabe Formular</title>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachricht bei Buttonklick</title>
+    <link rel="stylesheet" href="styles.css">
 
     <style>
    
@@ -108,6 +112,23 @@
         margin:30px;
         text-align:center;
        }
+       #messageContainer {
+    position: fixed;
+    top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease-in-out;
+
+       }
+
+    .hidden {
+    opacity: 0;
+    pointer-events: none;
+
+}
 
     </style>
 
@@ -115,6 +136,13 @@
   </head>
 
   <body>
+    <button id="messageButton">Klick mich!</button>
+    <div id="messageContainer" class="hidden">
+        <p id="message">Dies ist Ihre Nachricht!</p>
+    </div>
+
+    <script src="script.js"></script>
+
 
     
     <div class="navi">
@@ -169,7 +197,7 @@
   <section class="Kontakt">
   
      <div class="content2">
-     <h1 class="welcome">Wenn du Verbesserungen oder Beschwerden hast, dann kontaktiere uns unter:</h1>    
+     <h1 class="welcome">Wenn du Fragen oder Anregungen hast, dann kontaktiere uns unter:</h1>    
 
 	   <p class="welcome">
       E-Mail:  jm_erne@icloud.com
@@ -273,6 +301,14 @@ function showBestellen(){
   BestellenSection.style.display = "flex";
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('showMessage');
+    const messageBox = document.getElementById('messageBox');
+
+    button.addEventListener('click', function() {
+        messageBox.classList.toggle('hidden');
+    });
+});
 
 </script>
 
